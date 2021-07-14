@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+input:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+body {
+  padding: 64px 15% 10px 15%;
+    background-color: whitesmoke;
+}
+
+.page-title {
+  font-size: 36px;
+  color: #4e5150;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  font-size: 18px;
+  color: #333;
+  margin-bottom:5px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.col {
+  width: 100%;
+}
+
+.info-group:first-child {
+  margin-bottom: 50px;
+}
+
+.input-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.input-group {
+  margin-bottom: 5px;
+}
+
+.input-group label {
+  font-size: 12px;
+  color: #4f4f4f;
+  font-weight: 600;
+}
+
+.input-group div {
+  border: 2px solid #828282;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  padding: 0 8px;
+}
+
+.input-group div i {
+  color: #828282;
+  margin-right: 16px;
+}
+
+.input-group div input,
+.input-group div select {
+  width: 100%;
+  height: 80%;
+  border: 0;
+}
+
+.save-box label {
+  font-size: 12px;
+}
+
+.save-box input {
+  margin-right: 10px;
+}
+
+.continue-btn {
+  float: left;
+  margin-top: 20px;
+  border: 0;
+  background-color: orangered;
+  color: white;
+  width: 166px;
+  height: 54px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.cart-wrapper {
+  border-radius: 12px;
+  background-color: grey;
+  padding: 30px;
+}
+
+.cart-wrapper .shipping-cost,
+.cart-wrapper .total-cost {
+  border-top: 1px solid red;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart-wrapper .shipping-cost p:nth-child(2),
+.cart-wrapper .total-cost p:nth-child(2) {
+  font-size: 14px;
+}
+
+.product-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-bottom: 26px;
+}
+
+.product-wrapper .img {
+  width: 136px;
+  height: 136px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-wrapper .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.product-wrapper .info h4 {
+  color: #4e5150;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.product-wrapper .info .cost {
+  color: #f2994a;
+  font-weight: 600;
+}
+
+.product-wrapper .info .cost span {
+  font-size: 12px;
+  color: #4e5150;
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+
+.product-wrapper .info .amount-box {
+  margin-top: auto;
+  width: 130px;
+  height: 40px;
+  padding: 0 10px;
+  border: 2px solid #828282;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-wrapper .info .amount-box button {
+  width: 20px;
+  height: 20px;
+  background-color: #e0e0e0;
+  color: #828282;
+  border-radius: 4px;
+  border: 0;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.product-wrapper:first-child .img {
+  background-image: url("../img/photo1.png");
+}
+
+.product-wrapper:nth-child(2) {
+  margin-bottom: 100px;
+}
+
+.product-wrapper:nth-child(2) .img {
+  background-image: url("../img/photo2.png");
+}
+
+footer {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  color: #a9a9a9;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+footer p a {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #a9a9a9;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 40px 20px;
+  }
+  .page-title {
+    font-size: 24px;
+  }
+  .sub-title {
+    font-size: 14px;
+  }
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .cart-wrapper .shipping-cost,
+  .cart-wrapper .total-cost {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  .product-wrapper .img {
+    width: 124px;
+    height: 124px;
+  }
+  .product-wrapper .info h4 {
+    font-size: 12px;
+  }
+  .product-wrapper .info .cost {
+    font-size: 12px;
+  }
+  .product-wrapper .info .cost span {
+    font-size: 10px;
+  }
+  .product-wrapper .info .amount-box {
+    width: 122px;
+    height: 50px;
+    padding: 0 10px;
+  }
+  .input-group label {
+    font-size: 10px;
+  }
+  .input-group div {
+    margin-top: 5px;
+    height: 40px;
+  }
+  .input-group div i {
+    font-size: 1.2rem;
+    margin-right: 12px;
+  }
+}
